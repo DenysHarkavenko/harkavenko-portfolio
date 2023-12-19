@@ -23,13 +23,13 @@ body {
 }
 
 a {
-    /* text-decoration: none; */
+    text-decoration: none;
     color: inherit;
 }
 
 .container {
     padding: 0 30px;
-    width: 62.5rem;
+    max-width: 62.5rem;
     height: 100%;
     margin: 0 auto;
 }

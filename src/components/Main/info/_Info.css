@@ -1,0 +1,14 @@
+.main__skills li {
+    margin-left: 30px;
+}
+
+.main__skills h1 {
+    font-size: 20px;
+    color: var(--txt-inf-head);
+}
+
+.main__skills h2 {
+    font-size: 18px;
+    color: var(--txt-inf-body);
+    font-weight: 600;
+}

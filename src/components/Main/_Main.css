@@ -3,14 +3,27 @@
     height: 100%;
 }
 
+.main .container{
+    display: flex;
+    justify-content: space-between;
+}
+
 .main__content-experience,
 .main__content-education {
     margin-top: 100px;
 }
 
+.main__content{
+    width: 600px;
+}
+
+.main__skills{
+    width: 250px;
+}
+
 .main__content-about p,
 .main__content-experience p {
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: 18px;
 }
 
@@ -31,7 +44,6 @@
     flex-direction: column;
 }
 
-/* ===  === */
 .item__text-title {
     font-size: 25px;
 }
@@ -44,3 +56,5 @@
     font-size: 14px;
     color: var(--txt-date);
 }
+
+

@@ -1,5 +1,15 @@
 .main__skills li {
-    margin-left: 30px;
+    margin: 5px 20px;
+    /* */
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+
+.main__skills li::before{
+        content: '•';
 }
 
 .main__skills h1 {
@@ -11,4 +21,23 @@
     font-size: 18px;
     color: var(--txt-inf-body);
     font-weight: 600;
+}
+
+
+/*  */
+
+.bx{
+    font-size: 20px;
+}
+
+.npm{
+    height: 10px;
+}
+
+.sql{
+    height: 16px;
+}
+
+.img_ic{
+    margin: 0 2px;
 }

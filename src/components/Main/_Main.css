@@ -55,6 +55,7 @@
 .item__text-time {
     font-size: 14px;
     color: var(--txt-date);
+    color: ligh;
 }
 
 

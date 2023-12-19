@@ -1,4 +1,6 @@
 import './_Info.css'
+const npm: string = require('../../../images/npm.png')
+const sql: string = require('../../../images/MySQL.png')
 
 export default function Info() {
     return (
@@ -17,19 +19,18 @@ export default function Info() {
             <h2>Front-End:</h2>
             <ul>
                 <li>
-                    <i className="bx bxl-html5"></i>HTML5 (
-                    <i className="bx bxl-bootstrap"></i>Bootstrap5),
+                    <i className="bx bxl-html5" style={{ color: 'red' }}></i> HTML5 (<i className="bx bxl-bootstrap" style={{ color: 'purple' }}></i>Bootstrap5),
                 </li>
                 <li>
-                    <i className="bx bxl-css3"></i>CSS3 (
-                    <i className="bx bxl-sass"></i>Sass,{' '}
-                    <i className="bx bxl-tailwind-css"></i>Tailwind),
+                    <i className="bx bxl-css3" style={{ color: 'blue' }}></i>CSS3 (
+                    <i className="bx bxl-sass" style={{ color: 'palevioletred' }}></i>Sass,
+                    <i className="bx bxl-tailwind-css"style={{ color: 'teal' }}></i>Tailwind),
                 </li>
                 <li>
-                    <i className="bx bxl-javascript"></i> JavaScript,
+                    <i className="bx bxl-javascript" style={{ color: 'orange' }}></i>JavaScript,
                 </li>
                 <li>
-                    <i className="bx bxl-typescript"></i> Typescript,
+                    <i className="bx bxl-typescript" style={{ color: 'blue' }}></i> Typescript,
                 </li>
                 <li>
                     <i className="bx bxl-react"></i> React.
@@ -38,11 +39,17 @@ export default function Info() {
             <h2>Back-End:</h2>
             <ul>
                 <li>
-                    <i className="bx bxl-nodejs"></i> Node.js,
+                    <i className="bx bxl-nodejs" style={{ color: 'green' }}></i> Node.js,
                 </li>
-                <li>Express,</li>
-                <li>npm,</li>
-                <li>MySQL</li>
+                <li>
+                    <i className="bx bxl-nodejs" style={{ color: 'green' }}></i> Express,
+                </li>
+                <li>
+                    <img src={npm} alt="" className="npm img_ic" /> npm,
+                </li>
+                <li>
+                    <img src={sql} alt="" className="sql img_ic" /> MySQL
+                </li>
             </ul>
             <br />
 

@@ -29,7 +29,9 @@ export default function Header() {
                         </div>
                     </div>
                     <div className="header__row logo">
-                        <img src={logo} alt="Logo not found"/>
+                        <a href="">
+                            <img src={logo} alt="Logo not found"/>
+                        </a>
                     </div>
                 </div>
             </div>

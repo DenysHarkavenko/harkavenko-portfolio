@@ -56,7 +56,7 @@ export default function Info() {
             <h1>Other Technical Skills</h1>
             <h2>Programming languages:</h2>
             <p>
-                <i className="bx bxl-c-plus-plus"></i> C++, C#,{' '}
+                <i className="bx bxl-c-plus-plus" style={{color: "blue"}}></i> C++, C#,{' '}
                 <i className="bx bxl-python"></i> Python (basic).
             </p>
             <h2>Technologies:</h2>

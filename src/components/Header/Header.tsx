@@ -1,17 +1,17 @@
-import "./_Header.css"
+import classes from "./Header.module.css"
 const logo = require("../../images/logo.jpg");
 
 export default function Header() {
     return (
-        <header className="header">
+        <header className={classes.header}>
             <div className="container">
-                <div className="header__row">
-                    <div className="header__row content">
-                        <div className="content-title">
+                <div className={classes.row}>
+                    <div className={classes.content}>
+                        <div className={classes.content__title}>
                             <h1>Denys Harkavenko</h1>
                             <p>Trainee Full-Stack dev.</p>
                         </div>
-                        <div className="content-contacts">
+                        <div className={classes.content__contacts}>
                             <ul>
                                 <li>
                                     <i className='bx bx-envelope'></i>
@@ -28,7 +28,7 @@ export default function Header() {
                             </ul>
                         </div>
                     </div>
-                    <div className="header__row logo">
+                    <div>
                         <a href="">
                             <img src={logo} alt="Logo not found"/>
                         </a>

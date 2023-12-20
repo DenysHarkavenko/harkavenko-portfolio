@@ -1,10 +1,7 @@
 import "./_Main.css"
-import Info from "./info/Info";
-const duikt = require("../../images/education/duikt.png");
-const genius = require("../../images/education/geniusspace.png");
-const lits = require("../../images/education/lits.png");
-const cpe = require("../../images/education/cpe1.png");
-const cpa = require("../../images/education/cpa2.png");
+import EducationItem from "./EducationItem/EducationItem";
+import Info from "./Info/Info";
+import { educationPlace } from "../../data/info";
 
 export default function Main() {
     return (
@@ -29,66 +26,7 @@ export default function Main() {
                     </div>
                     <div className="main__content-education">
                         <h1>— Education & courses</h1>
-                        <a href="https://duikt.edu.ua/" target="_blank">
-                            <div className="education__item">
-                                <div className="education__item-img">
-                                    <img src={duikt} alt="Education place logo not found"/>
-                                </div>
-                                <div className="education__item-text">
-                                    <h1 className="item__text-title">Software Enginner</h1>
-                                    <span className="item__text-place">State University of information and communication technologies</span>
-                                    <span className="item__text-time">September 2022 - Present</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://genius.space/fullstack/" target="_blank">
-                            <div className="education__item">
-                                <div className="education__item-img">
-                                    <img src={genius} alt="Education place logo not found"/>
-                                </div>
-                                <div className="education__item-text">
-                                    <h1 className="item__text-title">Full-Stack dev.</h1>
-                                    <span className="item__text-place">Genius.Space</span>
-                                    <span className="item__text-time">November 2023 - Present</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://prometheus.org.ua/course/course-v1:LITS+114+2022_T2" target="_blank">
-                            <div className="education__item">
-                                <div className="education__item-img">
-                                    <img src={lits} alt="Education place logo not found"/>
-                                </div>
-                                <div className="education__item-text">
-                                    <h1 className="item__text-title">Basics of Web UI development 2023</h1>
-                                    <span className="item__text-place">Lviv IT School</span>
-                                    <span className="item__text-time">September 2023 - October 2023 </span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://edube.org/study/cppe2" target="_blank">
-                            <div className="education__item">
-                                <div className="education__item-img">
-                                    <img src={cpa} alt="Education place logo not found"/>
-                                </div>
-                                <div className="education__item-text">
-                                    <h1 className="item__text-title">C++ Essentials – Part 2 (Intermediate)</h1>
-                                    <span className="item__text-place">OpenEDG</span>
-                                    <span className="item__text-time">March 2023 - May 2023</span>
-                                </div> 
-                            </div>
-                        </a>
-                        <a href="https://edube.org/study/cppe1" target="_blank">
-                            <div className="education__item">
-                                <div className="education__item-img">
-                                    <img src={cpe} alt="Education place logo not found"/>
-                                </div>
-                                <div className="education__item-text">
-                                    <h1 className="item__text-title">C++ Essentials – Part 1 (Basics)</h1>
-                                    <span className="item__text-place">OpenEDG</span>
-                                    <span className="item__text-time">December 2022 - February 2023</span>
-                                </div>
-                            </div>
-                        </a>
+                        {educationPlace.map(place => <EducationItem educationPlace={place} key={Date.now()}/>)}
                     </div>
                 </div>
                 <Info/>

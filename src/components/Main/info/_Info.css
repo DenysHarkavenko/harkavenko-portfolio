@@ -1,15 +1,12 @@
 .main__skills li {
     margin: 5px 20px;
-    /* */
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-
 }
 
-
 .main__skills li::before{
-        content: '•';
+    content: '•';
 }
 
 .main__skills h1 {
@@ -22,9 +19,6 @@
     color: var(--txt-inf-body);
     font-weight: 600;
 }
-
-
-/*  */
 
 .bx{
     font-size: 20px;

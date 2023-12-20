@@ -17,45 +17,12 @@
     width: 600px;
 }
 
-.main__skills{
-    width: 250px;
-}
-
 .main__content-about p,
 .main__content-experience p {
     margin-top: 20px;
     font-size: 18px;
 }
 
-.education__item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 100px;
-    margin-top: 20px;
+.main__skills{
+    width: 250px;
 }
-
-.education__item-img {
-    width: 90px;
-}
-
-.education__item-text {
-    display: flex;
-    flex-direction: column;
-}
-
-.item__text-title {
-    font-size: 25px;
-}
-
-.item__text-place {
-    font-size: 16px;
-}
-
-.item__text-time {
-    font-size: 14px;
-    color: var(--txt-date);
-    color: ligh;
-}
-
-

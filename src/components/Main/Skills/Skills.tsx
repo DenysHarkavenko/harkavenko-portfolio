@@ -2,62 +2,93 @@ import './Skills.css'
 const npm: string = require('../../../images/npm.png')
 const sql: string = require('../../../images/MySQL.png')
 
+const knowledge: string[] = ['Responsive markup', 'JavaScript', 'React', 'REST API', 'Relation databases']
+const languages: string[] = ['Ukrainian (native)', 'English (A2)', 'Russian (native)', 'Czech (A1)']
+
+interface ISkills {
+    title: string,
+    icon: JSX.Element | string,
+}
+
+const frontEndSkills:ISkills[] = [
+    {
+        title: "HTML5",
+        icon: <i className="bx bxl-html5"style={{ color: 'purple' }}></i>,
+    },
+    {
+        title: "CSS3",
+        icon: <i className="bx bxl-css3" style={{ color: 'blue' }}></i>,
+    },
+    {
+        title: "Bootstrap",
+        icon: <i className="bx bxl-bootstrap"style={{ color: 'purple' }}></i>,
+    },
+    {
+        title: "Saas",
+        icon:  <i className="bx bxl-sass" style={{ color: 'palevioletred' }}></i>,
+    },
+    {
+        title: "Tailwind",
+        icon: <i className="bx bxl-tailwind-css" style={{ color: 'teal' }}></i>,
+    },
+    {
+        title: "JavaScript",
+        icon:  <i className="bx bxl-javascript" style={{ color: 'orange' }}></i>,
+    },
+    {
+        title: "TypeScript",
+        icon:  <i className="bx bxl-typescript" style={{ color: 'blue' }}></i>,
+    },
+    {
+        title: "React",
+        icon:  <i className="bx bxl-react"></i>,
+    }
+
+]
+
+const backEndSkills:ISkills[] =[
+    {
+        title: "Node.js",
+        icon: <i className="bx bxl-nodejs" style={{ color: 'green' }}></i>,
+    },
+    {
+        title: "Express",
+        icon: <i className="bx bxl-nodejs" style={{ color: 'green' }}></i>,
+    },
+    {
+        title: "npm",
+        icon: <img src={npm} alt="" />,
+    },
+    {
+        title: "MySQL",
+        icon: <img src={sql} alt="" />,
+    }
+]
+
 export default function Skills() {
     return (
+        
         <div className="main__skills">
             <h1>Industry Knowledge</h1>
             <ul>
-                <li>Responsive markup</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>REST API</li>
-                <li>Relation databases</li>
+                {knowledge.map(val => <li>{val}</li>)}
             </ul>
-            <br />
-
+                <br />
             <h1>My Stack</h1>
             <h2>Front-End:</h2>
             <ul>
-                <li>
-                    <i className="bx bxl-html5" style={{ color: 'red' }}></i> HTML5 (<i className="bx bxl-bootstrap" style={{ color: 'purple' }}></i>Bootstrap5),
-                </li>
-                <li>
-                    <i className="bx bxl-css3" style={{ color: 'blue' }}></i>CSS3 (
-                    <i className="bx bxl-sass" style={{ color: 'palevioletred' }}></i>Sass,
-                    <i className="bx bxl-tailwind-css"style={{ color: 'teal' }}></i>Tailwind),
-                </li>
-                <li>
-                    <i className="bx bxl-javascript" style={{ color: 'orange' }}></i>JavaScript,
-                </li>
-                <li>
-                    <i className="bx bxl-typescript" style={{ color: 'blue' }}></i> Typescript,
-                </li>
-                <li>
-                    <i className="bx bxl-react"></i> React.
-                </li>
+                {frontEndSkills.map(val => <li>{val.icon} {val.title}</li>)}
             </ul>
             <h2>Back-End:</h2>
             <ul>
-                <li>
-                    <i className="bx bxl-nodejs" style={{ color: 'green' }}></i> Node.js,
-                </li>
-                <li>
-                    <i className="bx bxl-nodejs" style={{ color: 'green' }}></i> Express,
-                </li>
-                <li>
-                    <img src={npm} alt="" className="npm img_ic" /> npm,
-                </li>
-                <li>
-                    <img src={sql} alt="" className="sql img_ic" /> MySQL
-                </li>
+                {backEndSkills.map(val=> <li>{val.icon} {val.title}</li>)}
             </ul>
-            <br />
-
+                <br />
             <h1>Other Technical Skills</h1>
             <h2>Programming languages:</h2>
             <p>
-                <i className="bx bxl-c-plus-plus" style={{color: "blue"}}></i> C++, C#,{' '}
-                <i className="bx bxl-python"></i> Python (basic).
+                <i className="bx bxl-c-plus-plus" style={{ color: 'blue' }}></i>{' '}
+                C++, C#, <i className="bx bxl-python"></i> Python (basic).
             </p>
             <h2>Technologies:</h2>
             <p>
@@ -77,10 +108,7 @@ export default function Skills() {
 
             <h1>Languages</h1>
             <ul>
-                <li>Ukrainian (native),</li>
-                <li>English (A2),</li>
-                <li>Russian (native),</li>
-                <li>Czech (A1).</li>
+                {languages.map(val => <li>{val}</li>)}
             </ul>
             <br />
 

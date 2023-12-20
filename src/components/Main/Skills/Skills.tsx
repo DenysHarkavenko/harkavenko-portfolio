@@ -1,8 +1,8 @@
-import './_Info.css'
+import './Skills.css'
 const npm: string = require('../../../images/npm.png')
 const sql: string = require('../../../images/MySQL.png')
 
-export default function Info() {
+export default function Skills() {
     return (
         <div className="main__skills">
             <h1>Industry Knowledge</h1>

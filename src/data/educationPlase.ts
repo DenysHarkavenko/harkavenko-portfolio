@@ -12,11 +12,6 @@ export interface IEducationItem {
     direction: string,
 }
 
-export interface IInfomText {
-    title: string,
-    content: string,
-}
-
 export const educationPlace: IEducationItem[] = [
     // DUIKT 
     {

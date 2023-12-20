@@ -1,3 +1,7 @@
+.main__skills{
+    width: 250px;
+}
+
 .main__skills li {
     margin: 5px 20px;
     display: flex;

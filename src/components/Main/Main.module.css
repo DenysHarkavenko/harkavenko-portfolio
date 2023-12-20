@@ -3,26 +3,29 @@
     height: 100%;
 }
 
+.container {
+    padding: 0 30px;
+    max-width: 62.5rem;
+    height: 100%;
+    margin: 0 auto;
+}
+
 .main .container{
     display: flex;
     justify-content: space-between;
 }
 
-.main__content-experience,
-.main__content-education {
-    margin-top: 100px;
+.content__item{
+    margin-bottom: 100px;
 }
 
 .main__content{
     width: 600px;
 }
 
-.main__content-about p,
-.main__content-experience p {
+.main__content p{
     margin-top: 20px;
     font-size: 18px;
 }
 
-.main__skills{
-    width: 250px;
-}
+

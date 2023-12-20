@@ -9,6 +9,19 @@
     flex-wrap: wrap;
 }
 
+.main__skills a{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.main__skills p{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .main__skills li::before{
     content: '•';
 }
@@ -25,16 +38,13 @@
 }
 
 .bx{
-    font-size: 20px;
+    font-size: 24px;
 }
 
-.npm{
-    height: 10px;
+.npm, .sql{
+    margin-right: 3px;
 }
 
-.sql{
-    height: 16px;
-}
 
 .img_ic{
     margin: 0 2px;

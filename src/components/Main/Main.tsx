@@ -1,7 +1,7 @@
 import classes from "./Main.module.css"
 import EducationItem from './EducationItem/EducationItem'
 import TextBlock from '../TextBlock'
-import Skills from './Skills/Skills'
+import Skills from './SkillsList/SkillList'
 import { educationPlace } from '../../data/educationPlase'
 import { infoContent } from '../../data/infoText'
 

@@ -1,6 +1,8 @@
-import './Skills.css'
+import './SkillList.css'
 const npm: string = require('../../../images/npm.png')
 const sql: string = require('../../../images/MySQL.png')
+const axure: string = require('../../../images/axure.png')
+const figma: string = require("../../../images/figma.png")
 
 const knowledge: string[] = ['Responsive markup', 'JavaScript', 'React', 'REST API', 'Relation databases']
 const languages: string[] = ['Ukrainian (native)', 'English (A2)', 'Russian (native)', 'Czech (A1)']
@@ -20,12 +22,12 @@ const frontEndSkills:ISkills[] = [
         icon: <i className="bx bxl-css3" style={{ color: 'blue' }}></i>,
     },
     {
-        title: "Bootstrap",
-        icon: <i className="bx bxl-bootstrap"style={{ color: 'purple' }}></i>,
-    },
-    {
         title: "Saas",
         icon:  <i className="bx bxl-sass" style={{ color: 'palevioletred' }}></i>,
+    },
+    {
+        title: "Bootstrap",
+        icon: <i className="bx bxl-bootstrap"style={{ color: 'purple' }}></i>,
     },
     {
         title: "Tailwind",
@@ -57,11 +59,11 @@ const backEndSkills:ISkills[] =[
     },
     {
         title: "npm",
-        icon: <img src={npm} alt="" />,
+        icon: <img className='npm' src={npm} alt="Not Found" />,
     },
     {
         title: "MySQL",
-        icon: <img src={sql} alt="" />,
+        icon: <img className='sql' src={sql} alt="Not Found" />,
     }
 ]
 
@@ -69,11 +71,13 @@ export default function Skills() {
     return (
         
         <div className="main__skills">
+            {/* Unmark list */}
             <h1>Industry Knowledge</h1>
             <ul>
                 {knowledge.map(val => <li>{val}</li>)}
             </ul>
-                <br />
+            <br />
+            {/* First Mark list */}
             <h1>My Stack</h1>
             <h2>Front-End:</h2>
             <ul>
@@ -83,35 +87,39 @@ export default function Skills() {
             <ul>
                 {backEndSkills.map(val=> <li>{val.icon} {val.title}</li>)}
             </ul>
-                <br />
+            <br />
+            {/* Text line 1 */}
             <h1>Other Technical Skills</h1>
             <h2>Programming languages:</h2>
             <p>
-                <i className="bx bxl-c-plus-plus" style={{ color: 'blue' }}></i>{' '}
-                C++, C#, <i className="bx bxl-python"></i> Python (basic).
+                <i className="bx bxl-c-plus-plus" style={{ color: 'blue' }}></i>C++, 
+                C#, 
+                <i className="bx bxl-python"></i> Python (basic).
             </p>
+            {/* Text line 2 */}
             <h2>Technologies:</h2>
             <p>
-                <i className="bx bxl-git"></i> Git,
-                <i className="bx bxl-github"></i> GitHub,
-                <i className="bx bxl-figma"></i> Figma, Axure,
-                <i className="bx bxl-adobe"></i> Adobe PS.
+                <i className="bx bxl-git" style={{color: "red"}}></i> Git,
+                <i className="bx bxl-github" style={{color: "gray"}}></i> GitHub,
+                <img src={figma} alt="Not Found"/> Figma, 
+                <img src={axure} alt="Not Found"/> Axure,
+                <i className="bx bxl-adobe" style={{color: "#061148"}}></i> Adobe PS.
             </p>
             <br />
-
+            {/* Text line 3 */}
             <h1>Soft-skills</h1>
             <p>
                 Mathematical critical thinking, disciplined, responsible,
-                positive, sociable, humane, polite !{' '}
+                positive, sociable, humane, polite !
             </p>
             <br />
-
+            {/* Second Mark List  */}
             <h1>Languages</h1>
             <ul>
                 {languages.map(val => <li>{val}</li>)}
             </ul>
             <br />
-
+            {/* Third Matk List */}
             <h1>Media</h1>
             <ul>
                 <li>
@@ -128,11 +136,6 @@ export default function Skills() {
                         target="_blank"
                     >
                         <i className="bx bxl-github"></i> GitHub
-                    </a>
-                </li>
-                <li>
-                    <a href="#" target="_blank">
-                        DOU
                     </a>
                 </li>
                 <li>

@@ -37,15 +37,15 @@
     font-weight: 600;
 }
 
-.bx{
-    font-size: 24px;
+.icon{
+    margin-right: 5px;
 }
 
-.npm, .sql{
-    margin-right: 3px;
+.unmark__list{
+    margin-left: 0px !important;
 }
 
-
-.img_ic{
-    margin: 0 2px;
+.unmark__list li::before{
+    content: none;
 }
+

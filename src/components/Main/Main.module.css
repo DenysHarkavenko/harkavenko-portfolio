@@ -21,6 +21,7 @@
 
 .main__content{
     width: 600px;
+    color: var(--txt-body);
 }
 
 .main__content p{

@@ -7,7 +7,12 @@
     padding: 0;
 }
 
-:root{
+/* :root{
+    
+} */
+
+html[data-theme="light"]{
+    --bg-color: #f4f4f4;
     --txt-head: #101214;
     --txt-body: #222222;
     --txt-inf-head: #2B3239;
@@ -15,11 +20,21 @@
     --txt-date: #73808D;
 }
 
+html[data-theme="dark"]{
+    --bg-color: #050321;
+    --txt-head: #e3e3e3;
+    --txt-body: #e3e3e3;
+    --txt-inf-head: #e3e3e3;
+    --txt-inf-body: #e3e3e3;
+    --txt-date: #8c8989;
+}
+
 html,
 body {
-    background-color: #f4f4f4;
     font-family: Rubik, sans-serif;
     font-weight: normal;
+    background-color: var(--bg-color);
+    transition: all 1s ease;
 }
 
 a {

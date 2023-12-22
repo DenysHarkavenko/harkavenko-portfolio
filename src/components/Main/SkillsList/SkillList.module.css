@@ -1,5 +1,6 @@
 .main__skills{
     width: 250px;
+    color: var(--txt-inf-body);
 }
 
 .main__skills li {
@@ -9,21 +10,28 @@
     flex-wrap: wrap;
 }
 
+.main__skills li::before{
+    content: '•';
+}
+
+.unmark__list{
+    margin-left: 0px !important;
+}
+
+.unmark__list li::before{
+    content: none;
+}
+
 .main__skills a{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
 
-
 .main__skills p{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-}
-
-.main__skills li::before{
-    content: '•';
 }
 
 .main__skills h1 {
@@ -41,11 +49,5 @@
     margin-right: 5px;
 }
 
-.unmark__list{
-    margin-left: 0px !important;
-}
 
-.unmark__list li::before{
-    content: none;
-}
 

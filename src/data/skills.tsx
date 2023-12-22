@@ -1,16 +1,15 @@
 import { Icon } from '@iconify/react';
 
-export const knowledge: string[] = ['Responsive markup', 'JavaScript', 'React', 'REST API', 'Relation databases']
-export const languages: string[] = ['Ukrainian (native),', 'English (A2),', 'Russian (native),', 'Czech (A1).']
-export const softSkills: string[] = ['Mathematical critical thinking,', ' disciplined,', ' responsible,', ' positive,', ' sociable,', ' humane,', ' polite !']
+export const KNOWLEDGE: string[] = ['Responsive markup', 'JavaScript', 'React', 'REST API', 'Relation databases']
+export const LANGUAGES: string[] = ['Ukrainian (native),', 'English (A2),', 'Russian (native),', 'Czech (A1).']
+export const SOFT_SKILLS: string[] = ['Mathematical critical thinking,', ' disciplined,', ' responsible,', ' positive,', ' sociable,', ' humane,', ' polite !']
 
 interface ISkills {
     title: string,
     icon: JSX.Element | string,
-    iconComponent?: typeof Icon,
 }
 
-export const frontEndSkills:ISkills[] = [
+export const FRONTEND_SKILLS:ISkills[] = [
     {
         title: "HTML5",
         icon: <Icon icon="vscode-icons:file-type-html" width="20" height="20" className="icon" />,
@@ -53,7 +52,7 @@ export const frontEndSkills:ISkills[] = [
 
 ]
 
-export const backEndSkills:ISkills[] =[
+export const BACKEND_SKILLS:ISkills[] =[
     {
         title: "Node.js",
         icon: <Icon icon="vscode-icons:file-type-node" width="20" height="20" className="icon" />,

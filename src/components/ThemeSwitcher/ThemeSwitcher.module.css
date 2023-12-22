@@ -1,0 +1,24 @@
+.row{
+    height: 40px;
+    max-width: 62.5rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.themeBtn{
+    background-color: inherit;
+    border: none;
+}
+
+.icon{
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+    color: var(--txt-head);
+}
+
+.icon:hover{
+    color: red;
+}

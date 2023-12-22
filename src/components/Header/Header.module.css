@@ -23,15 +23,18 @@
 
 .content__title h1{
     font-size: 50px;
+    color: var(--txt-head);
 }
 
 .content__title p{
     font-size: 25px;
+    color: var(--txt-body);
 }
 
 .content__contacts{
     margin-top: 35px;
     line-height: 25px;
+    color: var(--txt-body);
 }
 
 .header li{

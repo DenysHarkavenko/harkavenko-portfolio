@@ -11,6 +11,14 @@
     
 } */
 
+/* #root{
+    min-height: 100vh;
+}
+
+.App{
+    height: 100vh;
+} */
+
 html[data-theme="light"]{
     --bg-color: #f4f4f4;
     --txt-head: #101214;
@@ -31,6 +39,7 @@ html[data-theme="dark"]{
 
 html,
 body {
+    min-height: 100%;
     font-family: Rubik, sans-serif;
     font-weight: normal;
     background-color: var(--bg-color);
@@ -45,6 +54,15 @@ a {
 .container {
     padding: 0 30px;
     max-width: 62.5rem;
-    height: 100%;
+    min-height: 100%;
     margin: 0 auto;
+}
+
+.container-fix{
+    margin: 0 auto;
+    min-height: 100vh;
+    max-width: 62.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

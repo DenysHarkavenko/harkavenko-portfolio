@@ -1,5 +1,5 @@
 import classes from './EducationItem.module.css'
-import { IEducationItem } from '../../../data/educationPlase'
+import { IEducationItem } from '../../data/educationPlase'
 
 interface IEducationItemProps {
     educationPlace: IEducationItem

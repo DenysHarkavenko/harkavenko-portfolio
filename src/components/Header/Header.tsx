@@ -29,7 +29,7 @@ export default function Header() {
                         </div>
                     </div>
                     <div>
-                        <a href="">
+                        <a href="/start">
                             <img src={logo} alt="Logo not found"/>
                         </a>
                     </div>

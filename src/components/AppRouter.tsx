@@ -8,6 +8,7 @@ export default function AppRouter() {
         <Routes>
             <Route path="/start" element={<Start />} />
             <Route path="/" element={<MainPage />} />
+            <Route path="/main" element={<MainPage />} />
             <Route path="*" element={<PageError />} />
         </Routes>
     )
